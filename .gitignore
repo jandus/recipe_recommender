@@ -1,0 +1,15 @@
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+.ipynb_checkpoints
+*/.ipynb_checkpoints
+*/*/.ipynb_checkpoints
+*/*/*/.ipynb_checkpoints
+data/food_classification
+data/New_images
+data/New_images_resized
+data/recipe_recommender
+test_images
+models
+src/modules/__pycache__
