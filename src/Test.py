@@ -1,4 +1,3 @@
-#from tensorflow.python.keras.optimizers import Adam
 from keras.optimizers import Adam
 from tensorflow.python.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.python.keras.callbacks import LearningRateScheduler
@@ -349,13 +348,12 @@ def main(argv):
 
     prediction = CustomImagePrediction()
     prediction.setModelTypeAsResNet()
-    prediction.setModelPath("model_ex-005_acc-0.991592.h5")
-    prediction.setJsonPath("model_class.json")
+    prediction.setModelPath("../data/models/resnet50/model_ex-005_acc-0.991592.h5")
+    prediction.setJsonPath("../data/json/model_class.json")
     prediction.loadModel(num_objects=77)
 
-    predictions, probabilities = prediction.predictImage("test_images/"+argv, result_count=131)
-    print(type(predictions))
-    print(type(probabilities))
+    predictions, probabilities = prediction.predictImage("../data/test_images/"+argv, result_count=131)
+
     for eachPrediction, eachProbability in zip(predictions, probabilities):
         if float(eachProbability) > 60:
             print(eachPrediction , " : " , eachProbability)

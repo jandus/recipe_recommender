@@ -6,10 +6,11 @@
 */.ipynb_checkpoints
 */*/.ipynb_checkpoints
 */*/*/.ipynb_checkpoints
-data/food_classification
+data/food_images
+data/models
 data/New_images
 data/New_images_resized
 data/recipe_recommender
 test_images
-models
+models_bkp
 src/modules/__pycache__

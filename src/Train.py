@@ -178,8 +178,8 @@ class ModelTraining:
                 """
 
         self.__data_dir = data_directory
-        self.__train_dir = os.path.join(self.__data_dir, "images/train")
-        self.__test_dir = os.path.join(self.__data_dir, "images/test")
+        self.__train_dir = os.path.join(self.__data_dir, "food_images/train")
+        self.__test_dir = os.path.join(self.__data_dir, "food_images/test")
         self.__trained_model_dir = os.path.join(self.__data_dir, "models/resnet50")
         self.__model_class_dir = os.path.join(self.__data_dir, "json")
 
