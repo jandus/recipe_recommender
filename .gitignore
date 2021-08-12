@@ -11,6 +11,9 @@ data/models
 data/New_images
 data/New_images_resized
 data/recipe_recommender
+data/demo
+data/tmp
 test_images
 models_bkp
-src/modules/__pycache__
+src/modules/__pycache__/
+src/modules/__pycache__/recommender.cpython-38.pyc

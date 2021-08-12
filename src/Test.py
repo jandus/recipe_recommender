@@ -352,7 +352,7 @@ def main(argv):
     prediction.setJsonPath("../data/json/model_class.json")
     prediction.loadModel(num_objects=77)
 
-    predictions, probabilities = prediction.predictImage("../data/test_images/"+argv, result_count=131)
+    predictions, probabilities = prediction.predictImage("../data/test_images/"+argv, result_count=77)
 
     for eachPrediction, eachProbability in zip(predictions, probabilities):
         if float(eachProbability) > 60:
