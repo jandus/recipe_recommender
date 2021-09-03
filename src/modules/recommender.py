@@ -3,6 +3,30 @@ import numpy as np
 
 
 def get_recommendations(df, name, cosine_sim, indices):
+    '''
+    Calculates cosine similarity for the soup of words
+
+    Parameters
+    ----------
+    df : pandas DataFrame.
+        DataFrame with recipes
+        
+    name: string.
+        Recipe name.
+        regression models to avoid multicollinearity.
+
+    cosine_sim: np array.
+        Array with cosine similarity of the recipes.
+
+    indices: pandas DataFrame.
+        Contains index for each recipe
+
+    Returns
+    -------
+    DataFrame
+        with index and name of recipes that are similar.
+        
+    '''
     # Get the index of the recipe
     idx = indices[name]
     print(name)
